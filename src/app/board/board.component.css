@@ -1,0 +1,8 @@
+div {
+  background: #ffffff;
+  display: flex;
+  padding: 0 5px;
+  height: 100vh;
+  overflow-x: scroll;
+  margin-left: 15%;
+}

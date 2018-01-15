@@ -1,0 +1,12 @@
+<p class="card" draggable="true" (dragstart)="dragStart($event)" id="{{card.id}}"
+  (click)="onSelectCard(card)"
+  (click)="toggleDisplayCard()"
+  *ngIf="displayCard"
+  displayCard=true>
+ {{card.description}}
+</p>
+<input #addCardInput type="text" (keyup.enter)="onEnter(addCardInput.value);
+  addCardInput.value='';
+  displayAddCard=false;"
+  [(ngModel)]="selectCard.description"
+  *ngIf="selectCard" autofocus>
